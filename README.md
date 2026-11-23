@@ -39,3 +39,7 @@ Base local sugerida: `http://localhost:8080/api-sena`
 3. Compilar y empaquetar el proyecto desde la raíz:
    ```bash
    mvn clean package
+
+Copiar target/api-usuarios-1.0-SNAPSHOT.war en la carpeta webapps/ de Apache Tomcat y renombrarlo a api-sena.war.
+
+Iniciar Tomcat (startup.bat o catalina.bat run) y verificar respuesta en http://localhost:8080/api-sena/api/usuarios.
